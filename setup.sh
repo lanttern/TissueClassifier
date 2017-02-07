@@ -1,2 +1,6 @@
 export PYTHONPATH=$PWD:$PYTHONPATH
-mkdir -p data/slide_data/
+
+if [  -d "./data/slide_data/" ]; then
+    mkdir -p data/slide_data/
+fi
+
