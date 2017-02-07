@@ -94,12 +94,3 @@ def color_compactness(img):
 
 def get_pix(img):
     return float(np.shape(img)[0])*float(np.shape(img)[1])
-
-def dummy_feature(img):
-    return 30
-"""
-img = cv2.imread(sys.argv[1])
-print compute_white_area_1(img)
-print count_healthy_blobs_1(img)
-print feature_1(img)
-"""
