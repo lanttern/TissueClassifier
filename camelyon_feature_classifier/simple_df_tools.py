@@ -21,7 +21,7 @@ def add_feature(name, function, df):
         print "Column exists: please pick a new name"
         return df
 
-    df[name] = [-1]*np.ones_like(df[df.columns[0]])
+    df[name] = 0 #[-1]*np.ones_like(df[df.columns[0]])
     df_len = len(df[df.columns[0]])
     for idx, i in enumerate(df.index):
         if idx%100==0: print "Calculating feature for frame", idx, "out of", df_len
